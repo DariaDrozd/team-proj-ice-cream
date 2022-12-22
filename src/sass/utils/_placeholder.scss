@@ -51,3 +51,15 @@
         letter-spacing: 0.06em;
     }
 }
+
+%modal-title {
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+    }
+
+}
