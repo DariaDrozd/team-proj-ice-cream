@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://OlyaBukina.github.io/team-proj-ice-cream.git",
+  "homepage": "https://OlyaBukina.github.io/team-proj-ice-cream",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /team-proj-ice-cream/"

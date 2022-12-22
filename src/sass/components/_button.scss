@@ -1,5 +1,5 @@
 .primary-button {
-    // height: 38px;
+    height: 38px;
     // width: 108px;
     display: flex;
     justify-content: center;
@@ -33,13 +33,27 @@
 
     @media screen and (min-width: $desktop) {
         // width: 134px;
-        // height: 42px;
+        height: 42px;
         font-size: 14px;
     }
 }
 
+.button__icon {
+    margin-left: 4px;
+    color: $dark-text-color;
+    transition: fill 250ms $timing-function;
+
+    .primary-button:focus & {
+        fill: $light-text-color;
+    }
+
+    .secondary-button:focus & {
+        fill: $light-text-color;
+    }
+}
+
 .secondary-button {
-    // height: 38px;
+    height: 38px;
     // width: 108px;
     display: flex;
     justify-content: center;
@@ -72,7 +86,75 @@
 
     @media screen and (min-width: $desktop) {
         // width: 134px;
-        // height: 42px;
+        height: 42px;
         font-size: 14px;
+    }
+}
+
+.products-button {
+    @extend .secondary-button;
+    width: 108px;
+
+    @media screen and (min-width: $desktop) {
+        width: 134px;
+    }
+}
+
+.about-button {
+    @extend .primary-button;
+    width: 164px;
+}
+
+.modal-button {
+    @extend .primary-button;
+    width: 121px;
+}
+
+.location-button {
+    @extend .primary-button;
+    width: 196px;
+}
+
+.franchise-button {
+    @extend .secondary-button;
+    width: 196px;
+}
+
+.buy-button {
+    @extend .primary-button;
+    width: 152px;
+}
+
+.hero-secondary-button {
+    height: 24px;
+    width: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-decoration-line: underline;
+    color: $accent-color;
+    border: none;
+    background-color: transparent;
+    transition: color 250ms $timing-function;
+
+    @media screen and (min-width: $desktop) {
+        height: 40px;
+        width: 154px;
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: $hover-color;
+    }
+
+    &:focus {
+        color: $light-text-color;
+    }
+
+    &:disabled {
+        color: #ABABAB;
     }
 }
