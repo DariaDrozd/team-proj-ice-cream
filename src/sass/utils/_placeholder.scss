@@ -1,0 +1,53 @@
+%container {
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 0 32px;
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 0 16px;
+        width: $desktop;
+    }
+}
+
+%section {
+    padding: 60px 0;
+}
+
+%pre-title {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 30px;
+    }
+}
+
+%title {
+    font-family: $title-font;
+    font-size: 30px;
+    line-height: 1.26;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 34px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        letter-spacing: 0.06em;
+    }
+}

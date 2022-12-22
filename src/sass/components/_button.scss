@@ -1,0 +1,78 @@
+.primary-button {
+    // height: 38px;
+    // width: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $accent-color;
+    color: $dark-text-color;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.28;
+
+    &:hover,
+    &:focus {
+        background-color: $hover-color;
+        cursor: pointer;
+    }
+
+    &:focus {
+        color: $light-text-color;
+    }
+
+    &:disabled {
+        background-color: #ABABAB;
+    }
+
+
+    @media screen and (min-width: $desktop) {
+        // width: 134px;
+        // height: 42px;
+        font-size: 14px;
+    }
+}
+
+.secondary-button {
+    // height: 38px;
+    // width: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    color: $dark-text-color;
+    font-family: inherit;
+    border-radius: 8px;
+    border: 2px solid $accent-color;
+    transition: border-color 250ms $timing-function, color 250ms $timing-function;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.28;
+
+    &:hover,
+    &:focus {
+        border-color: $hover-color;
+        cursor: pointer;
+    }
+
+    &:focus {
+        color: $light-text-color;
+    }
+
+    &:disabled {
+        border-color: #ABABAB;
+    }
+
+    @media screen and (min-width: $desktop) {
+        // width: 134px;
+        // height: 42px;
+        font-size: 14px;
+    }
+}
