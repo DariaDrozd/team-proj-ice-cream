@@ -1,4 +1,20 @@
 
+.backdrop {
+
+    @media screen and (min-width: $tablet) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FCFCFC;
+    opacity: 1;
+    transition: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+}
 
 .our-location-modal {
     width: 100vw;
@@ -15,7 +31,17 @@
     border-radius: 10px;
 
     @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: $light-text-color;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+        max-width: 568px;
+        
         padding: 32px 60px;
+
     }
 
     &__text {
