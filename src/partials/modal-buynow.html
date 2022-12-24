@@ -1,0 +1,53 @@
+<!-- - МОДАЛЬНЕ ВІКНО -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <form class="form-communication">
+            <button type="button" class="modal__button-close" data-modal-close>
+                <svg class="modal__svg" width="20" height="20">
+                    <use href=""></use>
+                </svg>
+            </button>
+            <p class="form-communication__title">How it`s made ?</p>
+
+            <ul class="modal__list-buy">
+                <li class="modal__item-buy">
+                    <div class="cream__card">
+                        <svg class="cream__icon">
+                            <use href=""></use>
+                        </svg>
+                        <h2 class="cream___title">ICE CREAM</h2>
+                    </div>
+                </li>
+                <li class="modal__item-buy">
+                    <h2 class="modal__title-buy">ICE COFFEE</h2>
+                </li>
+                <li class="modal__item-buy">
+                    <h2 class="modal__title-buy">MILKSHAKES</h2>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <label class="form-communication__field">
+                        <input type="text" name="name" autofocus class="form-communication__input" 
+                        placeholder="Name" required/>
+                    </label>
+                </li>
+                <li>
+                    <label class="form-communication__field">
+                        <input type="phone" name="phone" class="form-communication__input" 
+                        placeholder="Phone" required/>
+                    </label>
+                </li>
+                <li>
+                    <label class="form-communication__field">
+                        <textarea name="comment" rows="2" class="form-communication__textarea-input"
+                            placeholder="Comment" required></textarea>
+                    </label>
+                </li>
+            </ul>
+           <button type="submit" class="button form-communication__button">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
