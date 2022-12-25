@@ -1,40 +1,76 @@
-<div class="conteiner тзь ш">
-    <h2 class="title__about">
+<section class="about">
+<div class="conteiner">
+    <h2 class="pretitle__about">
       TRADITION AND LOVE
-      <span class="pre-title__about">HOW IT’S MADE </span>
+      <span class="title__about">HOW IT’S MADE? </span>
     </h2>
-    <div>
-        <img src="" alt="">
-    <p class="text__about">
-      Ice is a place where you will become not only a little happier, but also
-      healthier. Health is the main value for us, and we follow it when creating our
-      handmade desserts.
-    </p>
-    <p class="text__about">
-      We use traditional recipes and 100% natural ingredients. Our products are so
-      natural that they can be given to children from the age of three years. Sweets
-      lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.
-    </p>
-    <p class="text__about">This is enough to choose ice cream and coffee for any mood!</p>
-    <button class="about-button" type="button">
-      <svg width="12" height="12" class="button">
-        <use href="./images/icons.svg#"></use>
+    <div class="about__traditionali">
+      <picture> 
+        <source
+        srcset="
+        ./images/about/cow_desktop@1x.png 1x,
+        ./images/about/cow_desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+        />
+        <source
+        srcset="
+        ./images/about/cow_tablet@1x.png 1x,
+        ./images/about/cow_tablet@2x.png 2x
+        "
+        media="(max-width:1199px)"
+        />
+        <source
+        srcset="
+        ./images/about/cow_mobile@1x.png 1x,
+        ./images/about/cow_mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+        />   
+        <img
+      src="./images/about/cow.png"
+      alt="Cow"
+      class="about__img"
+      />  
+  </picture>
+      <ul class="about__list">
+        <li class="about__item-1">Ice is a place where you will become not only a little happier, but also
+          healthier. Health is the main value for us, and we follow it when creating our
+          handmade desserts.</li>
+        <li class="about__item-2">We use traditional recipes and 100% natural ingredients. Our products are so
+          natural that they can be given to children from the age of three years. Sweets
+          lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</li>
+        <li class="about__item-3">This is enough to choose ice cream and coffee for any mood!</li>
+      <button class="modal-button about__button" type="button ">
+      <span>Read more</span> 
+      <svg width="12" height="12" class="button__icon">
+        <use href="./images/icons.svg#icon-button-arrow"></use>
       </svg>
-        <span class="name-button__about">Read more</span> 
     </button>
+      </ul>
     </div>
     <ul class="benefit__list">
       <li class="benefit__item">
+        <svg width="50" height="50" class="benefit__icon">
+          <use href="./images/icons.svg#icon-cow"></use>
+        </svg>
         <p class="benefit__text">721</p>
         <span class="benefit__pre-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</span>
       </li>
       <li class="benefit__item">
+        <svg width="50" height="50" class="benefit__icon">
+          <use href="./images/icons.svg#icon-poise"></use>
+        </svg>
         <p class="benefit__text">16kg</p>
         <span class="benefit__pre-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</span>
       </li>
       <li class="benefit__item">
+        <svg width="50" height="50" class="benefit__icon">
+          <use href="./images/icons.svg#icon-ice"></use>
+        </svg>
         <p class="benefit__text">84</p>
         <span class="benefit__pre-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</span>
       </li>
     </ul>
     </div>
+</section>
