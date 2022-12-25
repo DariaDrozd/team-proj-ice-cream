@@ -11,9 +11,11 @@ body {
 a {
     text-decoration: none;
     padding: 0;
+    color: inherit;
 }
 
-ul {
+ul,
+li {
     list-style: none;
 }
 
