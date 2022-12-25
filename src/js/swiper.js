@@ -1,9 +1,3 @@
-  // import Swiper bundle with all modules installed
-  import Swiper from 'swiper/bundle';
-
-  // import styles bundle
-  import 'swiper/css/bundle';
-
 (() => {
    
     function swiperSlider() {
@@ -19,7 +13,7 @@
                         disableOnInteraction: false,
                     },
                     slidesPerView: 1,
-                    spaceBetween: 30,
+                    spaceBetween: 32,
                     pagination: {
                         el: pagination,
                         clickable: true,
