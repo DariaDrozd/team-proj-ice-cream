@@ -1,16 +1,28 @@
 .address{
-    @extend %container;
+    
     @extend %section;
+    margin: 0;
+    width: 100vw;
+    
+
     background-color: $primary-bg-color;
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
-}
-.address-list{
-    margin-bottom: 20px;
     
-    .address-list_item + .address-list_item{
-        margin-top: 16px;
+}
+
+.address-container{
+    @extend %container;
+}
+
+@media screen and (max-width: 767.98px) {
+    .address-list {
+        margin-bottom: 20px;
+    
+        .address-list_item+.address-list_item {
+            margin-top: 16px;
+        }
     }
 }
 
@@ -68,5 +80,17 @@
 .contacts{
     .contacts__item + .contacts__item{
         margin-top: 6px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .address-list{
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .address-list_item{
+        width: 368px;
     }
 }
