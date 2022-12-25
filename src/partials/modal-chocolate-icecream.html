@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="modal-sheet">
+      <div class="modal-window">
+        <svg class="icon-close" width="24" height="24">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+        <span class="modal-window__title">Chololate icecream</span>
+
+         <picture>
+          <source
+            srcset="
+              ./images/modal-chocolate/icecream-desktop@1x.png 1x,
+              ./images/modal-chocolate/icecream-desktop@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/modal-chocolate/icecream-mobile@1x.png 1x,
+              ./images/modal-chocolate/icecream-mobile@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            src="./images/modal-chocolate/icecream-mobile@1x.png"
+            alt="icecream"
+            class="modal-window__img"
+            width="132"
+          />
+        </picture>  
+
+
+
+        <ul class="calories-list">
+          <li class="calories-list__item">
+            <span class="calories-list__number">320</span
+            ><span class="calories-list__desc">kcal</span>
+          </li>
+
+          <li class="calories-list__item">
+            <span class="calories-list__number">4g</span
+            ><span class="calories-list__desc">Prote...</span>
+          </li>
+
+          <li class="calories-list__item">
+            <span class="calories-list__number">8,2g</span
+            ><span class="calories-list__desc">Fats</span>
+          </li>
+
+          <li class="calories-list__item">
+            <span class="calories-list__number">40,4g</span
+            ><span class="calories-list__desc">Carbs</span>
+          </li>
+        </ul>
+
+        <span class="ingredients-title">Ingredients</span>
+
+        <ul class="ingredients-list">
+          <li class="ingredients-list__item">
+            <span class="ingredients-list__ingredient">Milk</span
+            ><span class="ingredients-list__ingredient">100ml</span>
+          </li>
+
+          <li class="ingredients-list__item">
+            <span class="ingredients-list__ingredient">Belgian chocolate</span
+            ><span class="ingredients-list__ingredient">20g</span>
+          </li>
+
+          <li class="ingredients-list__item">
+            <span class="ingredients-list__ingredient">Cream</span
+            ><span class="ingredients-list__ingredient">150 ml</span>
+          </li>
+
+          <li class="ingredients-list__item">
+            <span class="ingredients-list__ingredient">Cocoa powder</span
+            ><span class="ingredients-list__ingredient"> 30g</span>
+          </li>
+
+          <li class="ingredients-list__item">
+            <span class="ingredients-list__ingredient">Sugar</span
+            ><span class="ingredients-list__ingredient">40g</span>
+          </li>
+
+          <li class="ingredients-list__item">
+            <span class="ingredients-list__ingredient">Vanilla sugar</span
+            ><span class="ingredients-list__ingredient">10g</span>
+          </li>
+        </ul>
+
+        <form class="order-form">
+          <input
+            type="text"
+            name="username"
+            placeholder="Name"
+            class="order-form__input"
+          />
+
+          <input
+            type="tel"
+            name="phone-number"
+            placeholder="Phone"
+            class="order-form__input"
+          />
+
+          <textarea
+            name="comment"
+            placeholder="Comment"
+            class="order-form__textarea"
+          ></textarea>
+        </form>
+
+        <button type="submit" class="modal-icecream-btn">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
