@@ -16,23 +16,7 @@
     @extend %container;
 }
 
-@media screen and (max-width: 767.98px) {
-    .address-list {
-        margin-bottom: 20px;
-    
-        .address-list_item+.address-list_item {
-            margin-top: 16px;
-        }
-    }
-}
-
 .address-list_item{
-    width: 280px;
-    // height: 412px;
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 24px;
     margin: 0 auto;
 
     background-color: #fff;
@@ -64,6 +48,8 @@
 
 .address-list_link{
     color: $address-color;
+    line-height: 183%;
+        
 }
 
 .work-schedule{
@@ -83,14 +69,86 @@
     }
 }
 
+.address-container__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767.98px) {
+    // .address-container{
+    //     transform: translateY(-359px);
+    // }
+
+    .address-list {
+        margin-bottom: 20px;
+
+        .address-list_item+.address-list_item {
+            margin-top: 16px;
+        }
+    }
+
+    .address-list_item {
+        width: 280px;
+        padding-top: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 24px;
+    }
+
+    .address-container__button {
+
+        flex-direction: column;
+        .location-button{
+            margin-bottom: 16px;
+
+        }
+    }
+
+}
+
 @media screen and (min-width:768px) {
+    // .address-container{
+    //     transform: translateY(-299px);
+    // }
+
     .address-list{
         display: flex;
         justify-content: center;
         gap: 16px;
+        margin-bottom: 40px;
     }
 
     .address-list_item{
+        width: 224px;
+        padding: 40px 24px;
+
+        font-size: 14px;
+        
+    }
+
+    .address-container__button{
+        
+        .location-button{
+            margin-right: 16px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    // .address-container{
+    //     transform: translateY(-128px);
+    // }
+
+    .address-list{
+        justify-content: space-around;
+    }
+
+    .address-list_item {
         width: 368px;
+        padding: 40px;
+
+        font-size: 16px;
+                
     }
 }
