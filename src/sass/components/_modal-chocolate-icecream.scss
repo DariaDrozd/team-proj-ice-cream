@@ -9,6 +9,11 @@
   background-color: rgba(132, 162, 120, 0.2);
 }
 
+.modal-sheet.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal-window {
   background-color: $modal-bg-color;
   border-radius: 10px;
