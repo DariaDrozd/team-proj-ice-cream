@@ -9,7 +9,8 @@
   background-color: rgba(132, 161, 120, 0.8);
   overflow-y: auto;
   z-index: 100;
-  padding-bottom: 50px;
+display: flex;
+    justify-content: center;
   transition: opacity 250ms $timing-function;
 }
 
@@ -22,6 +23,8 @@
   background-color: $modal-bg-color;
   border-radius: 10px;
   position: relative;
+  
+   
 }
 
 .icon-close {
@@ -172,9 +175,10 @@
 
 @media screen and (max-width: 767px) {
   .modal-window {
-    width: 100%;
-    height: 100%;
-overflow-y: auto;
+    width: 100vw;
+    max-width: 480px;
+    height: 100vh;
+    overflow-y: auto;
     padding: 28px 20px;
   }
 
@@ -219,15 +223,20 @@ overflow-y: auto;
 
 // Styles for tablet/desktop
 
+@media screen and (min-width:481px) {
+  .modal-sheet{
+
+    padding: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+ 
   .modal-window {
     width: 568px;
-    min-height: 458px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+    height: 996px;
     padding: 32px 40px;
+    margin-bottom: 15px;
   }
 
   .modal-window__title {
@@ -289,6 +298,3 @@ overflow-y: auto;
 .order-form__textarea:not(:placeholder-shown):invalid {
   border-color: red;
 }
-
-
- 
