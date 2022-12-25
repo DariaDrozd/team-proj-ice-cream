@@ -1,0 +1,209 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #131313;
+  letter-spacing: 0.04em;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.primary-button, .buy-button, .location-button, .modal-button, .about-button {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8D24E;
+  color: #131313;
+  font-family: inherit;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.28;
+}
+.primary-button:hover, .buy-button:hover, .location-button:hover, .modal-button:hover, .about-button:hover, .primary-button:focus, .buy-button:focus, .location-button:focus, .modal-button:focus, .about-button:focus {
+  background-color: #0A8817;
+  cursor: pointer;
+}
+.primary-button:focus, .buy-button:focus, .location-button:focus, .modal-button:focus, .about-button:focus {
+  color: #FCFCFC;
+}
+.primary-button:disabled, .buy-button:disabled, .location-button:disabled, .modal-button:disabled, .about-button:disabled {
+  background-color: #ABABAB;
+}
+@media screen and (min-width: 1200px) {
+  .primary-button, .buy-button, .location-button, .modal-button, .about-button {
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+.button__icon {
+  margin-left: 4px;
+  color: #131313;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.primary-button:focus .button__icon, .buy-button:focus .button__icon, .location-button:focus .button__icon, .modal-button:focus .button__icon, .about-button:focus .button__icon {
+  fill: #FCFCFC;
+}
+.secondary-button:focus .button__icon, .franchise-button:focus .button__icon, .products-button:focus .button__icon {
+  fill: #FCFCFC;
+}
+
+.secondary-button, .franchise-button, .products-button {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #131313;
+  font-family: inherit;
+  border-radius: 8px;
+  border: 2px solid #F8D24E;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.28;
+}
+.secondary-button:hover, .franchise-button:hover, .products-button:hover, .secondary-button:focus, .franchise-button:focus, .products-button:focus {
+  border-color: #0A8817;
+  cursor: pointer;
+}
+.secondary-button:focus, .franchise-button:focus, .products-button:focus {
+  color: #FCFCFC;
+}
+.secondary-button:disabled, .franchise-button:disabled, .products-button:disabled {
+  border-color: #ABABAB;
+}
+@media screen and (min-width: 1200px) {
+  .secondary-button, .franchise-button, .products-button {
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+.products-button {
+  width: 108px;
+}
+@media screen and (min-width: 1200px) {
+  .products-button {
+    width: 134px;
+  }
+}
+
+.about-button {
+  width: 164px;
+}
+
+.modal-button {
+  width: 121px;
+}
+
+.location-button {
+  width: 196px;
+}
+
+.franchise-button {
+  width: 196px;
+}
+
+.buy-button {
+  width: 152px;
+}
+
+.hero-secondary-button {
+  height: 24px;
+  width: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #F8D24E;
+  border: none;
+  background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .hero-secondary-button {
+    height: 40px;
+    width: 154px;
+    font-size: 14px;
+  }
+}
+.hero-secondary-button:hover {
+  color: #0A8817;
+}
+.hero-secondary-button:focus {
+  color: #FCFCFC;
+}
+.hero-secondary-button:disabled {
+  color: #ABABAB;
+}
+
+.title {
+  font-family: "Seymour One", sans-serif;
+  font-size: 30px;
+  line-height: 1.26;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.about__conteiner {
+  background-color: #84A178;
+}/*# sourceMappingURL=index.css.map */
