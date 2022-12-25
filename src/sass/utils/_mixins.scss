@@ -1,11 +1,12 @@
 // media query
 @mixin mq($type) {
-    $phone: 479.98px;
-    $tablet: 767.98px;
-    $desktop: 1199.98px;
+    // $phone: 479.98px;
+    // $tablet: 767.98px;
+    // $desktop: 1199.98px;
 
     @if $type == 'phone' {
-        @media screen and (min-width: $phone) {
+        // @media screen and (min-width: $phone) {
+        @media screen and (min-width: $mobile) {
             @content;
         }    
     }
