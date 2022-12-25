@@ -1,17 +1,17 @@
 
 .backdrop {
-
-    @media screen and (min-width: $tablet) {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #FCFCFC;
-    opacity: 1;
-    transition: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(132, 161, 120, 0.8);
+        opacity: 1;
+        transition: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: $tablet) {
+    
 
     }
 }
@@ -30,6 +30,22 @@
     border: 2px solid $accent-color;
     border-radius: 10px;
 
+    z-index: 1;
+
+    @media screen and (min-width: $mobile) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: $light-text-color;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        
+        width: 280px;
+        height: 365px;
+        
+        
+    }
+
     @media screen and (min-width: $tablet) {
         position: absolute;
         top: 50%;
@@ -38,7 +54,8 @@
         transform: translate(-50%, -50%) scale(1);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
-        max-width: 568px;
+        width: 568px;
+        height: 458px;
         
         padding: 32px 60px;
 
@@ -71,7 +88,12 @@
         border: none;
         margin-bottom: 24px;
 
+        @media screen and (min-width: $mobile) {
+            width: 224px;
+        }
+
         @media screen and (min-width: $tablet) {
+        width: 448px;
         height: 260px;
         margin-bottom: 32px;
         }
