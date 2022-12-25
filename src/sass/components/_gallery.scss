@@ -1,0 +1,59 @@
+.gallery {
+    min-height: 1037px;
+    max-width: 480px;
+    margin: 0 auto;
+
+    background-image:
+        url(../images/section_bg/bg_gallery_mobile@1x.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/section_bg/bg_gallery_mobile@2x.png);
+    }
+
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+        background-image:
+            url(../images/products/products_tablet@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    $hero-linear-gradient-color,
+                    $hero-linear-gradient-color ),
+                url(../images/products/products_tablet@2x.png);
+            ;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $deaktop;
+        min-height: 600px;
+        background-image: linear-gradient(to right,
+                $hero-linear-gradient-color,
+                $hero-linear-gradient-color ),
+            url(../images/hero-desktop-1600.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    $hero-linear-gradient-color,
+                    $hero-linear-gradient-color ),
+                url(../images/hero-desktop-3200.jpg);
+            ;
+        }
+    }
+
+    // }
+}
+
+.gallery__container {
+    @extend %container;
+}
