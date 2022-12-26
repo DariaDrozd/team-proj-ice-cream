@@ -61,6 +61,15 @@ transition: background-color 250ms $timing-function;
 }
 
 .footer-tel {
+
+  @media screen and (max-width: 767px){
+    font-size: 16px;
+  }
+
+@media screen and (max-width: 480px) {
+  font-size: 12px;
+}
+
   font-weight: 700;
   font-size: 16px;
   line-height: 186%;
@@ -69,6 +78,15 @@ transition: background-color 250ms $timing-function;
 }
 
 .text-tel {
+
+  @media screen and (max-width: 767px) {
+      font-size: 16px;
+    }
+
+@media screen and (max-width: 480px) {
+  font-size: 12px;
+}
+
   font-weight: 700;
   font-size: 16px;
   line-height: 186%;
@@ -83,6 +101,16 @@ transition: background-color 250ms $timing-function;
 }
 
 .first-text {
+
+  @media screen and (max-width: 767px) {
+      font-size: 26px;
+      line-height: 32px;
+    } 
+
+@media screen and (max-width: 480px) {
+  font-size: 18px;
+  line-height: 22px;
+}
   position: relative;
   font-weight: 400;
   font-size: 30px;
@@ -112,6 +140,17 @@ opacity: 0;
 }
 
 .second-text {
+
+  @media screen and (max-width: 767px) {
+      font-size: 48px;
+        line-height: 59px;
+    }
+
+@media screen and (max-width: 480px) {
+  font-size: 34px;
+  line-height: 41px;
+}
+
   margin-top: 14px;
   font-weight: 700;
   font-size: 58px;
@@ -121,6 +160,11 @@ opacity: 0;
   color: #fcfcfc;
 }
 .resum {
+
+  @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
+    
   position: relative;
   text-align: center;
   font-weight: 700;
