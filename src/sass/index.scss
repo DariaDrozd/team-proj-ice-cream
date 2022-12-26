@@ -1,4 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
 @import "./utils/variables";
 @import "./utils/breakpoints";
 @import "./base/common";
@@ -6,6 +7,21 @@
 @import "./utils/placeholder";
 @import "./components/products";
 @import "./components/header";
+@import './components/modal-chocolate-icecream';
+@import "./components/our-location-modal";
+@import "./components/franchise-modal";
+
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './base/common';
+@import './components/button';
+@import './utils/placeholder';
+@import './components/products';
+@import './components/modal-chocolate-icecream';
+@import "./components/our-location-modal";
+@import "./components/franchise-modal";
+
 // @import "";
+
 // @import "";
 // @import "";
