@@ -3,6 +3,7 @@
   margin-bottom: 120px;
   gap: 16px;
   justify-content: center;
+  transform: translate(0, -11px);
 }
 
 .before-footer {
@@ -17,17 +18,38 @@
   margin-right: 16px;
     margin-left: 16px;
 }
-
+.komand-icon {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    //color: #ffffff;
+    border-radius: 50%;
+    background-color: #F8D24E;
+}
+.komand-icon:hover {
+background-color: $hover-color;
+transition: background-color 250ms $timing-function;
+}
+.our-icon {
+  display: flex;
+  gap: 30px;
+}
 .contact-tel {
   display: flex;
 }
+
+.social-media {
+      display: flex;
+        justify-content: flex-end;
+        margin-right: 16px;
+      }
 
 .cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 16px;
-  margin-left: 16px;
 }
 
 .footer-tel {
@@ -103,18 +125,10 @@ opacity: 0;
   content: '';
   display: block;
  margin-bottom: 12px;
-  width: 95%;
-  height: 1px;
+  width: 100%;
   background: #fff;
   border: 1px solid #E1E1E1;
   margin-left: auto;
   margin-right: auto;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.resum:hover::before {
-  color: #2196f3;
-}
