@@ -176,12 +176,15 @@
 }
 
 @media screen and (min-width:1200px) {
-    // .address-container{
-    //     transform: translateY(-128px);
-    // }
+    .address-container{        
+        padding: 0 16px;
+       
+        // transform: translateY(-128px);
+    }
 
     .address-list{
-        justify-content: space-around;
+        justify-content: center;
+        gap: 32px;
     }
 
     .address-list_item {
