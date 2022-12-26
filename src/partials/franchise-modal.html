@@ -37,10 +37,11 @@
           type="tel"
           class="form-subscribe__input"
           placeholder="Phone"
-          title="Format: 380501111111"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required title="Format: 123-456-7890"
         />
       </label>
-      <!-- required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+      
       <label class="form-subscribe__label">
         <input
           name="user-email"
@@ -54,7 +55,7 @@
         class="form-subscribe__textarea"
         name="user-text"
         placeholder="Comment"
-        min="3"
+        minlength="3"
       ></textarea>
 
       <button type="submit" class="form-subscribe__button">Submit</button>
