@@ -239,6 +239,12 @@
   }
 }
 
+.benefit__icon {
+   &:focus, &:hover {
+   fill: currentColor;
+  }
+}
+
 .benefit__text {
   font-weight: 700;
   text-align: center;
