@@ -6,17 +6,19 @@
   transform: translate(0, -11px);
 }
 
-.before-footer {
+/*.before-footer {
   background-color: $primary-bg-color;
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 12px;
-}
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}*/
 
 .before-button {
   background-color: $primary-bg-color;
-  margin-right: 16px;
-    margin-left: 16px;
+    margin-bottom: 12px;
 }
 .komand-icon {
   display: flex;
@@ -44,12 +46,15 @@ transition: background-color 250ms $timing-function;
       display: flex;
         justify-content: flex-end;
         margin-right: 16px;
-      }
+ }
+
 
 .cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .footer-tel {
