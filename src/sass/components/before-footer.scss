@@ -9,10 +9,13 @@
   background-color: $primary-bg-color;
   margin-left: 16px;
   margin-right: 16px;
+  margin-bottom: 12px;
 }
 
 .before-button {
   background-color: $primary-bg-color;
+  margin-right: 16px;
+    margin-left: 16px;
 }
 
 .contact-tel {
@@ -67,7 +70,7 @@
   height: 4px;
   background: #fff;
   border-radius: 2px;
-
+opacity: 0;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -86,4 +89,32 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fcfcfc;
+}
+.resum {
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+}
+.resum::before {
+  content: '';
+  display: block;
+ margin-bottom: 12px;
+  width: 95%;
+  height: 1px;
+  background: #fff;
+  border: 1px solid #E1E1E1;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.resum:hover::before {
+  color: #2196f3;
 }
