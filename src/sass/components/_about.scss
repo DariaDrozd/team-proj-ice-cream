@@ -222,10 +222,10 @@
 }
 
 .benefit__icon {
- fill: #F8D24E;
-      &:focus, &:hover {
-      fill: #84a178;
-     }
+fill: #F8D24E; 
+&:focus, &:hover {
+  fill: #84a178;
+ }
   @media screen and (max-width: 767px) {
     margin-left: 90px;
     margin-right: 90px;
@@ -243,7 +243,6 @@
   }
 
 }
-
 
 .benefit__text {
   font-weight: 700;
