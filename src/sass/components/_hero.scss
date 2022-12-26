@@ -1,4 +1,5 @@
 .hero {
+    margin: 0 auto;
     background-color: $primary-bg-color;
     min-width: 320px;
     
@@ -7,15 +8,11 @@
         }
 }
 
-
-
 .hero__container {
 
     @extend %container;
 
-    //@media screen and (min-width: 320px) {
-        //width: 320px;
-       // }
+    
     position: relative;
     padding-top: 38px;
     padding-bottom: 236px;
@@ -113,6 +110,10 @@
     @media screen and (min-width: $desktop) {
     gap: 34px;
     }
+}
+
+.hero-secondary-button {
+    cursor: pointer;
 }
 
 .data__list {
