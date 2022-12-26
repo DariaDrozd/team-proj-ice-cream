@@ -1,10 +1,12 @@
 @charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #131313;
   letter-spacing: 0.04em;
 }
+
 body.modal-open {
   overflow: hidden;
 }
@@ -45,7 +47,7 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -63,16 +65,21 @@ img {
   font-size: 12px;
   line-height: 1.28;
 }
-.primary-button:hover, .primary-button:focus {
+
+.primary-button:hover,
+.primary-button:focus {
   background-color: #0A8817;
   cursor: pointer;
 }
+
 .primary-button:focus {
   color: #FCFCFC;
 }
+
 .primary-button:disabled {
   background-color: #ABABAB;
 }
+
 @media screen and (min-width: 1200px) {
   .primary-button {
     font-size: 14px;
@@ -93,16 +100,21 @@ img {
   font-size: 12px;
   line-height: 1.28;
 }
-.secondary-button:hover, .secondary-button:focus {
+
+.secondary-button:hover,
+.secondary-button:focus {
   border-color: #0A8817;
   cursor: pointer;
 }
+
 .secondary-button:focus {
   color: #FCFCFC;
 }
+
 .secondary-button:disabled {
   border-color: #ABABAB;
 }
+
 @media screen and (min-width: 1200px) {
   .secondary-button {
     font-size: 14px;
@@ -134,6 +146,7 @@ img {
   max-width: 280px;
   width: 100%;
 }
+
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 450px;
@@ -154,4 +167,6 @@ img {
 
 .modal__list {
   list-style: none;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
