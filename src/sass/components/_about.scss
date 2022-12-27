@@ -77,20 +77,14 @@
 
 .about__img {
   @media screen and (max-width: 479px) {
-    height: 100hw;
     margin-left: auto;
     margin-right: auto;
   }
   @media screen and (min-width: 480px) {
-    height: 280px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 768px) {
-    height: 356px;
-  }
-  @media screen and (min-width: 1200px) {
-    height: 529px;
+ @media screen and (min-width: 1200px) {
     margin-left: -14px;
   }
 }
@@ -185,6 +179,7 @@
     margin-top: 32px;
   }
   @media screen and (min-width: 1200px) {
+     width: 164px;
     margin-top: 54px;
   }
 }
