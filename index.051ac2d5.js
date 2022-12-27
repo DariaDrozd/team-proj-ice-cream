@@ -1,2 +1,0 @@
-document.addEventListener("DOMContentLoaded",(function(){["data-modal"].forEach((e=>{const o=e+"-open",t=e+"-close",c=document.querySelectorAll("["+o+"]"),n=document.querySelectorAll("["+t+"]"),d=document.querySelector("["+e+"]");function l(){document.body.classList.toggle("modal-open"),d.classList.toggle("is-hidden")}c.forEach((e=>e.addEventListener("click",l))),n.forEach((e=>e.addEventListener("click",l)))}))}));
-//# sourceMappingURL=index.051ac2d5.js.map
