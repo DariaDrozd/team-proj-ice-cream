@@ -1,0 +1,233 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+    0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.page-header .container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 12px;
+  padding-left: 34px;
+  padding-right: 26px;
+  background-color: #84a178;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 11199px) {
+.menu-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 20px;
+        padding-left: 32px;
+        padding-right: 38px;
+        background-color: #84a178;
+        z-index: 999;
+
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+    }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.mobile-menu .link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 32px;
+}
+.list {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+.mobile-menu__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #fcfcfc;
+transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+.mobile-menu__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FCFCFC;
+    transition-property: color;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.mobile-menu__link:hover{
+    color: #131313;
+}
+
+.mobile-menu__link:focus {
+    color: #131313;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mobile-menu__button-div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px){
+   .mobile-menu__button-div{
+    display: none;
+   }
+}
+.mobile-menu__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 36px;
+  padding-right: 37px;
+  margin-top: 110px;
+
+  border: none;
+  transition-property: background-color, color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__button:hover {
+  background-color: #0a8817;
+}
+
+.mobile-menu__button:focus {
+  background-color: #0a8817;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.button__svg {
+  margin-left: 8px;
+}
