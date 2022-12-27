@@ -1,14 +1,17 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-@import './utils/variables';
-@import './utils/breakpoints';
-@import './base/common';
-@import './components/button';
-@import './utils/placeholder';
-@import './components/products';
+
+@import "./utils/variables";
+@import "./utils/breakpoints";
+@import "./base/common";
+@import "./components/button";
+@import "./utils/placeholder";
+@import "./components/hero";
+@import "./components/products";
 @import './components/modal-chocolate-icecream';
 @import "./components/our-location-modal";
 @import "./components/franchise-modal";
 @import "./components/about";
+
 // @import "";
 // @import "";
 // @import "";
