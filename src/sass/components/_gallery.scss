@@ -1,8 +1,5 @@
 .gallery-reviews {
     min-height: 1037px;
-    // max-width: 480px;
-    // margin: 0 auto;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +14,6 @@
     }
 
     @media screen and (min-width: $tablet) {
-        // max-width: $tablet;
         min-height: 1017px;
         background-image:
             url(../images/products/products_tablet@1x.png);
@@ -32,7 +28,6 @@
     }
 
     @media screen and (min-width: $desktop) {
-        // max-width: $desktop;
         min-height: 1053px;
         background-image:
             url(../images/products/products_desktop@1x.png);
@@ -45,15 +40,10 @@
             ;
         }
     }
-
-    // }
 }
 
 .gallery-reviews__container {
     @extend %container;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
 }
 
 .gallery {
