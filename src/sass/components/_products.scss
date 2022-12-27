@@ -309,11 +309,16 @@
 
   &__icon {
     fill: $dark-text-color;
+
+    transition: fill 250ms $timing-function;
+
+    &:hover {
+      fill: #ffffff;
+    }
+
   }
 
 }
-
-
 
 .products__icon{
   cursor: pointer;
