@@ -3,15 +3,13 @@
     <div class="hero__box">
       <div class="hero-title__wrapper">
         <h1 class="hero__title">ice cream made with passion</h1>
-        <ul class="hero-button__list">
-          <li class="hero-button__item">
-            <button class="products-button" type="button ">Products</button>
+        <ul class="hero-link__list">
+          <li>
+            <a class="hero-link__products" href="">Products</a>
           </li>
-          <li class="hero-button__item">
-            <button class="hero-secondary-button" type="button ">
-              How it’s made?
-            </button>
-          </li>
+          <li>
+            <a class="hero-link__about" href="">How it’s made?</a>
+            </li>
         </ul>
       </div>
       <ul class="data__list">
@@ -28,9 +26,11 @@
     <p class="hero-text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et
+      <a class="hero-text__link" href="">
       <svg class="hero-text-arrow" width="40" height="16">
         <use href="./images/icons.svg#icon-arrow-long"></use>
       </svg>
+      </a>
     </p>
     <picture>
       <source
@@ -63,6 +63,7 @@
         alt="ice-cream"
       />
     </picture>
+    
     <picture>
       <source
         srcset="
@@ -86,5 +87,6 @@
         alt="many-icecream"
       />
     </picture>
+    
   </div>
 </section>
