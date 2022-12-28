@@ -9,7 +9,12 @@
     transition: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1010;
 
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        }
 
 }
 
@@ -58,9 +63,9 @@
     background: $light-text-color;
     border: 2px solid $accent-color;
     border-radius: 10px;
-    padding: 28px;
+    padding: 26px;
 
-    z-index: 1;
+    z-index: 1010;
 
     @media screen and (min-width: $mobile) {
         position: absolute;
@@ -172,6 +177,10 @@
         outline: none;
         letter-spacing: 0;
 
+        &:not(:placeholder-shown):required:invalid {
+        border-color: red;
+        }
+
         @media screen and (min-width: $tablet) {
 
             width: 368px;
@@ -200,6 +209,10 @@
         letter-spacing: 0;
 
         margin-bottom: 24px;
+
+        &:not(:placeholder-shown):invalid {
+        border-color: red;
+        }
 
         @media screen and (min-width: $tablet) {
             width: 368px;
