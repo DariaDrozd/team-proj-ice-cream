@@ -1,20 +1,19 @@
 .header {
   background-color: #84a178;
+  
   @media screen and (max-width: 480px) {
     position: fixed;
     z-index: 1005;
     width: 100%;
   }
 }
-
-@media screen and (min-width: 1200px) {
-  .menu-toggle {
-    display: none;
-  }
-  
+ @media screen and (min-width: 1200px) {
+.header__toggle {
+  display: none;
 }
-
+ }
 .header__container {
+  @extend %container;
   display: flex;
   padding-top: 12px;
   padding-bottom: 16px;
@@ -43,9 +42,7 @@
   cursor: pointer;
 }
 
-.menu-toggle {
-  display: none;
-}
+
 
 .nav__item {
   font-style: normal;
@@ -230,6 +227,12 @@
     margin-left: 8px;
   }
 
+  .header__toggle{
+    margin-left: auto;
+    margin-right: 36px;
+    padding-top: 20px;
+  }
+
   .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -266,6 +269,11 @@
   .header__button {
     display: none;
   }
+
+     .header__toggle {
+       margin-left: auto;
+       margin-right: 20px;
+     }
 
   .menu-toggle {
     min-height: 40px;
