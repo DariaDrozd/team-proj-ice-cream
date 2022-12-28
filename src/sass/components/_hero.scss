@@ -83,6 +83,8 @@
 
     display: flex;
     justify-content: space-between;
+    
+    
 
 
     @media screen and (min-width:$tablet) {
@@ -95,6 +97,12 @@
 
 }
 
+.hero-title__wrapper {
+    animation-name: showTitle;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+}
+
 .hero__title {
 
     font-family: $title-font;
@@ -105,6 +113,7 @@
     max-width: 247px;
     margin-bottom: 32px;
     color: $light-text-color;
+  
 
     @media screen and (min-width: $tablet) {
         margin-bottom: 24px;
@@ -118,6 +127,8 @@
     }
 
 }
+
+
 
 .hero-link__list {
     display: flex;
@@ -202,6 +213,10 @@
 }
 .data__list {
     margin-top: 14px;
+    animation-name: showData;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+   
     
         @media screen and (max-width: $tablet) {
             display: none;
@@ -259,6 +274,9 @@
     font-size: 12px;
     line-height: calc(17 / 12);
     color: $light-text-color;
+    animation-name: showHeroText;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 
     @media screen and (max-width: 767.98px) {
         display: none;
@@ -288,6 +306,10 @@
 
     display: none;
     position: absolute;
+    animation-name: showIceCreams;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    
     
         @media screen and (min-width: $tablet) {
     
@@ -308,8 +330,13 @@
 .ice-cream__img {
 
     position: absolute;
+    z-index: 2;
     bottom: 0;
     left: 83px;
+    animation-name: showIceCream;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    
 
     @media screen and (min-width: $tablet) {
     left: 408px;
@@ -319,6 +346,72 @@
     left: 652px;
 }
 }
+
+@keyframes showIceCream {
+    from {
+        transform: scaleX(0%);
+    }
+
+    to {
+        transform: scaleX(100%);
+    }
+}
+
+
+
+@keyframes showTitle {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes showData {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform:translateX(0%) ;
+    }
+}
+
+@keyframes showIceCreams {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes showHeroText {
+    0% {
+        
+        opacity: 0;
+    }
+
+    
+
+    
+    100% {
+        
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
 
 
 
