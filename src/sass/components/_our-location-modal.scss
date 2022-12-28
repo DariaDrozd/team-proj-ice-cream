@@ -1,29 +1,33 @@
 
 .backdrop {
-    position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(132, 161, 120, 0.8);
-        opacity: 1;
-        transition: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 1010;
-        &.is-hidden {
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(132, 161, 120, 0.8);
+    opacity: 1;
+    transition: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1010;
+
+    &.is-hidden {
         opacity: 0;
         pointer-events: none;
-        }
+    }
 }
 
 .our-location-modal {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     overflow-y: auto;
+    
+    width: calc(100% - 40px);
+    max-width: 280px;
+    max-height: 365px;
+    height: calc(100% - 40px);
 
     padding: 26px;
 
@@ -33,34 +37,23 @@
 
     z-index: 1010;
 
-    .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.7);
-    }
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    // .backdrop.is-hidden & {
+    // transform: translate(-50%, -50%) scale(0.7);
+    // }
 
     @media screen and (min-width: $mobile) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background-color: $light-text-color;
-        transform: translate(-50%, -50%) scale(1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-        
-        width: 280px;
-        height: 365px;
-        
-        
+
     }
 
     @media screen and (min-width: $tablet) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background-color: $light-text-color;
-        transform: translate(-50%, -50%) scale(1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
-        width: 568px;
-        height: 458px;
+        max-width: 568px;
+        max-height: 458px;
+        width: calc(100% - 150px);
+        height: calc(100% - 150px);
         
         padding: 30px 58px;
 
