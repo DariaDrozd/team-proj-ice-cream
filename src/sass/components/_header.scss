@@ -1,9 +1,6 @@
 .header {
-<<<<<<< Updated upstream
-=======
-  display: flex;
->>>>>>> Stashed changes
   background-color: #84a178;
+  display: flex;
   @media screen and (max-width: 480px) {
     position: fixed;
     z-index: 1005;
@@ -19,6 +16,7 @@
 }
 
 .header__container {
+  @extend %container;
   display: flex;
   padding-top: 12px;
   padding-bottom: 16px;
