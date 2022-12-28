@@ -1,4 +1,4 @@
-// Модальне вікно BUY NOW
+// Modal window BUY NOW
 .backdrop {
     position: fixed;
     width: 100%;
@@ -30,6 +30,14 @@
     border-radius: 10px;
     border: 2px solid #F8D24E;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   // width: 95%;
+    //   // max-width: 280px;
+    //   height: 95%;
+    //   max-height: 609px;
+    //   // overflow: scroll;
+    //   padding: 28px;
+
         @media screen and (min-width: 768px) {
             max-width: 568px;
             height: 644px;
@@ -45,7 +53,7 @@
     }
    }
 
-/* МОДАЛЬНА кнопка */
+/* Modal button*/
 
 .modall__button-close {
     position: absolute;
@@ -87,7 +95,7 @@
 .form-communication__title {
     height: 24px;
     margin-top: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
@@ -96,7 +104,7 @@
     text-align: center;
     color: #131313;
         @media screen and (min-width: 768px) {
-            margin-bottom: 40px;
+            margin-bottom: 90px;
             margin-top: 32px;
             font-size: 20px;
             line-height: 1.4;
@@ -105,37 +113,118 @@
 
     .box__card {
         width: 132px;
-        height: 199px;
+        height: 132px;
         background: #FCFCFC;
         border: 2px solid #F8D24E;
-        border-radius: 10px;
+        border-radius: 50%;
+        }
+        
+    .box__card-img {
+        width: 132px;
+        height: 132px;
+        position: absolute;
+        border-radius: 50%;
+        transform: translateY(-50%);
     }
 
     .box__card-first {
+        width: 132px;
+        height: 132px;
+        position: relative;
         border: 2px solid #96AF8C;
         filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
         border-radius: 15px;
-    }
 
-    .box__card-first::before{
-    display: block;
-    content: "";
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    // background-image: url("../../images/coffee-mob@1.png");
-    //     @media screen and (min-width: 768px) {
-    //         background-image: url("../images/coffee-mob@2x.png");
-    //     }
+        @media screen and (max-width: 767px) {
+                margin-bottom: 60px;
+            }
     }
+        .box__card-first:hover,
+        .box__card-first:focus {
+            background: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+            border-radius: 15.7808px;
+        }
+
+    // .box__card-first::before {
+    // display: block;
+    // content: " ";
+    // position: absolute;
+    // bottom: 29%;
+    // left: -12%;
+    // right: 20%;
+    // width: 166px;
+    // height: 166px;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // background-image: url('../images/cream-mob@1x.png');
+    //     @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //      background-image: url('../images/cream-mob@2x.png');
+    // }
+    //     // Tablet Desktop
+    //     @media screen and (min-width: 768px) {
+    //         background: url('../images/cream-desk@1x.png');
+    //         @media (min-device-pixel-ratio: 2),
+    //         (min-resolution: 192dpi),
+    //         (min-resolution: 2dppx) {
+    //         background-image: url('../images/cream-desk@2x.png');
+    //         background-repeat: no-repeat;
+    //         background-position: top;
+    //         right: -3%;
+    //         bottom: 8px;
+    //         }
+    //     }
+    // }
 
     .box__card-second {
-        background: #EFD478;
+        // background: #EFD478;
         border: 2px solid #EFD478;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
         border-radius: 15px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+       
     }
+
+// .box__card-second::before {
+//     display: block;
+//         content: " ";
+//         position: absolute;
+//         bottom: 29%;
+//         left: -12%;
+//         right: 20%;
+//         bottom: 77px;
+//         width: 168px;
+//         height: 168px;
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-image: url('../images/coffee-mob@1x.png');
+//             @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             background-image: url('../images/coffee-mob@2x.png');
+//         }
+    
+//         // Tablet Desktop
+//         @media screen and (min-width: 768px) {
+//             background: url('../images/coffee-desk@1x.png');
+//             @media (min-device-pixel-ratio: 2),
+//             (min-resolution: 192dpi),
+//             (min-resolution: 2dppx) {
+//                 background-image: url('../images/coffee-desk@2x.png');
+//             // background-size: contain;
+//                 background-repeat: no-repeat;
+//                 background-position: center;
+//             @media screen and (max-width: 767px) {
+//                     margin-bottom: 50px;
+//             }
+//           }
+//         }
+//     }
 
     .box__card-third {
         border: 2px solid #D6936D;
@@ -143,14 +232,48 @@
         border-radius: 15.7808px;
     }
 
-    .box__card::before {
-        display: block;
-        content: "";
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+        .box__card-third:hover,
+        .box__card-third:focus {
+
+            border: 2px solid #D6936D;
+            background: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+            border-radius: 15.7808px;
+        }
+
+    // .box__card-third::before {
+    //     // display: block;
+        //     content: " ";
+        //     position: absolute;
+        // bottom: 29%;
+        //     left: -15%;
+        //     right: 50%;
+        //     width: 166px;
+        //     height: 166px;
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        //     background-image: url('../images/shake-mob@1x.png');
         
-    }
+        //     @media (min-device-pixel-ratio: 2),
+        //     (min-resolution: 192dpi),
+        //     (min-resolution: 2dppx) {
+        //         background-image: url('../images/shake-mob@2x.png');
+        //         background-repeat: no-repeat;
+        //         background-position: center;
+        //     }
+        
+        //     // Tablet Desktop
+        //     @media screen and (min-width: 768px) {
+        //         background: url('../images/shake-desk@1x.png');
+        
+        //         @media (min-device-pixel-ratio: 2),
+        //         (min-resolution: 192dpi),
+        //         (min-resolution: 2dppx) {
+        //             background-image: url('../images/shake-desk@2x.png');
+        //         background: padding-box;
+        //         }
+        //     }
+        // }
 
 .box___title {
     font-style: normal;
@@ -162,12 +285,25 @@
     text-transform: uppercase;
     color: #131313;
     padding-bottom: 20px;
-    padding-top: 157px;     
+    padding-top: 70%;     
 }
 
     .modall__item-buy {
-        margin-bottom: 20px;
+        position: relative;
+            @media screen and (max-width: 767px) {
+                    margin-bottom: 20px;
+        }
     }
+
+.modall__item-buy::before {
+display: block;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+   
+}
 
 .modall__list-form {
     display: flex;
@@ -280,4 +416,4 @@
             font-size: 14px;
             line-height: 1.21;
         }
-        }
+    }
