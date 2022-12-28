@@ -1,10 +1,35 @@
 .header {
-  display: flex;
-  padding: 0 20px;
-  margin: 0 auto;
   background-color: #84a178;
+  @media screen and (max-width: 480px) {
+    position: fixed;
+    z-index: 1005;
+    width: 100%;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+  
+}
+
+.header__container {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 8px;
+    align-items: center;
+  }
+}
 .nav__list {
   display: flex;
   align-items: center;
@@ -87,7 +112,6 @@
 
 @media screen and (min-width: 1200px) {
   .header {
-    display: flex;
     padding: 0 20px;
     margin: 0 auto;
     background-color: #84a178;
@@ -173,7 +197,6 @@
 //tablet
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
-    display: flex;
     padding: 0 32px;
     background-color: #84a178;
   }
@@ -211,8 +234,6 @@
     min-height: 40px;
     min-width: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-left: auto;
     margin-right: 36px;
     padding-top: 29px;
@@ -233,7 +254,6 @@
 //mobile
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
-    display: flex;
     padding-left: 20px;
     padding-right: 20px;
     background-color: #84a178;
@@ -251,8 +271,6 @@
     min-height: 40px;
     min-width: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-left: auto;
     padding-top: 29px;
     padding-bottom: 10px;
