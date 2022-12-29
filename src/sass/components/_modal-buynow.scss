@@ -127,9 +127,6 @@
     border-radius: 50%;
     transform: translateY(-50%);
 
-    .consent__checkbox:checked+& {
-        background-color: #fff;
-    }
 }
 
 .box__card-first {
