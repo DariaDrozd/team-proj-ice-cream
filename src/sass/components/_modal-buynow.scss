@@ -25,7 +25,7 @@
     visibility: hidden;
 }
 
-.modall {
+.modal {
     position: relative;
     max-width: 280px;
     width: 100%;
@@ -44,7 +44,7 @@
 
 /* Modal button*/
 
-.modall__button-close {
+.modal__button-close {
     position: absolute;
     width: 22px;
     height: 22px;
@@ -61,14 +61,14 @@
     }
 }
 
-.modall__svg {
+.modal__svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.modall__list-buy {
+.modal__list-buy {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,6 +126,10 @@
     position: absolute;
     border-radius: 50%;
     transform: translateY(-50%);
+
+    .consent__checkbox:checked+& {
+        background-color: #fff;
+    }
 }
 
 .box__card-first {
@@ -135,9 +139,13 @@
     border: 2px solid #96AF8C;
     border-radius: 15px;
     margin-bottom: 80px;
+
     //  @media screen and (max-width: 767px) {
     //          margin-bottom: 80px;
     // }
+    .consent__checkbox:checked+& {
+        background-color: #96AF8C;
+    }
 }
 
 .box__card-first:hover,
@@ -154,6 +162,10 @@
         margin-bottom: 60px;
         margin-top: 0px;
     }
+
+    .consent__checkbox:checked+& {
+        background-color: #EFD478;
+    }
 }
 
 .box__card-second:hover,
@@ -169,6 +181,10 @@
     @media screen and (min-width:768px) {
         margin-bottom: 90px;
         margin-top: 0px;
+    }
+
+    .consent__checkbox:checked+& {
+        background-color: #D6936D;
     }
 }
 
@@ -190,7 +206,7 @@
     padding-top: 70%;
 }
 
-.modall__item-buy {
+.modal__item-buy {
     position: relative;
     width: 132px;
     height: 132px;
@@ -200,7 +216,7 @@
     }
 }
 
-.modall__item-buy::before {
+.modal__item-buy::before {
     display: block;
     content: "";
     background-size: contain;
@@ -210,7 +226,7 @@
 
 }
 
-.modall__list-form {
+.modal__list-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,7 +240,7 @@
     }
 }
 
-.modall__item {
+.modal__item {
     margin-bottom: 12px;
 
     @media screen and (min-width: 768px) {
