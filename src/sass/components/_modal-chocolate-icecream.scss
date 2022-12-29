@@ -10,6 +10,7 @@
   overflow-y: auto;
   z-index: 100;
   display: flex;
+  padding: 20px;
   justify-content: center;
   transition: opacity 250ms $timing-function;
 }
@@ -23,11 +24,12 @@
   background-color: $modal-bg-color;
   border-radius: 10px;
   position: relative;
-  
-   
+  border: 2px solid #F8D24E;
+
+
 }
 
-.icon-close {
+.modal__button-close {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -242,14 +244,14 @@
 // Styles for tablet/desktop
 
 @media screen and (min-width:481px) {
-  .modal-sheet{
+  .modal-sheet {
 
     padding: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
- 
+
   .modal-window {
     width: 568px;
     height: 996px;
@@ -299,5 +301,3 @@
     padding-left: 16px;
   }
 }
-
-

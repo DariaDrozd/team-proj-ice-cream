@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const modals = ['data-modal'];
+  const modals = [
+    'data-product-modal',
+    'data-modal-video',
+    'data-modal-buy-now',
+  ];
   modals.forEach(element => {
     const openModalSelector = element + '-open';
     const closeModalSelector = element + '-close';
@@ -22,4 +26,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-

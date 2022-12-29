@@ -1,32 +1,41 @@
 <!-- МОДАЛЬНЕ ВІКНО  з відеороліком -->
-<div class="backdrop is-hidden" data-modal>
-    <div data-modal>
+<div class="backdrop is-hidden" data-modal-video>
+  <div>
     <div class="modal">
-        <button type="button" class="modal__button-close" data-modal-close>
-            <svg class="modal__svg" width="22" height="22">
-                <use href="./images/symbol-defs.svg#icon-close-mob"></use>
-            </svg>
-        </button>
-        <h2 class="modal__title">How it’s made?</h2>
-        <ul class="modal__list">
-            <li class="modal__item">
-                <iframe class="modal__video" width="560" height="315" src="https://www.youtube.com/embed/zagD0LQdsDE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </li>
-            <li class="modal__item">
-                <p class="modal__text">Ice cream is a product obtained by freezing and whipping a mixture of natural
-                    milk, cream, condensed or
-                    dry whole and skimmed milk, various flavoring and aromatic substances and a stabilizer. Good taste
-                    ice creams are complemented by its high nutritional value. The components of ice cream in the
-                    production process are
-                    practically not change, so it is absorbed by (95...98)%. Milk-based ice cream, containing milk fat -
-                    up to 15%, proteins
-                    (3-6)%, sugars from 14 to 32%, minerals, vitamins A, groups B, D, K. Fruit and berry ice cream and
-                    ice cream with fruit and berry fillings are rich in vitamin C.</p>
-        </ul>
+      <button type="button" class="modal__button-close" data-modal-video-close>
+        <svg class="modal__svg" width="22" height="22">
+          <use href="./images/symbol-defs.svg#icon-close-mob"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title">How it’s made?</h2>
+      <ul class="modal__list">
+        <li class="modal__item">
+          <iframe
+            class="modal__video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zagD0LQdsDE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </li>
+        <li class="modal__item">
+          <p class="modal__text">
+            Ice cream is a product obtained by freezing and whipping a mixture
+            of natural milk, cream, condensed or dry whole and skimmed milk,
+            various flavoring and aromatic substances and a stabilizer. Good
+            taste ice creams are complemented by its high nutritional value. The
+            components of ice cream in the production process are practically
+            not change, so it is absorbed by (95...98)%. Milk-based ice cream,
+            containing milk fat - up to 15%, proteins (3-6)%, sugars from 14 to
+            32%, minerals, vitamins A, groups B, D, K. Fruit and berry ice cream
+            and ice cream with fruit and berry fillings are rich in vitamin C.
+          </p>
+        </li>
+      </ul>
     </div>
+  </div>
 </div>
-<script src="./js/modal.js"></script>
