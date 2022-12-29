@@ -1,0 +1,104 @@
+.gallery-reviews {
+    min-height: 1037px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:
+        url(../images/section_bg/bg_gallery_mobile@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/section_bg/bg_gallery_mobile@2x.png);
+    }
+
+    @media screen and (min-width: $tablet) {
+        min-height: 1017px;
+        background-image:
+            url(../images/products/products_tablet@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/products/products_tablet@2x.png);
+            ;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        min-height: 1053px;
+        background-image:
+            url(../images/products/products_desktop@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/products/products_desktop@2x.png);
+            ;
+        }
+    }
+}
+
+.gallery-reviews__container {
+    @extend %container;
+}
+
+.gallery {
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-32px);
+
+    @media screen and (min-width: $tablet) {
+        transform: translateY(-144px);
+    }
+
+    @media screen and (min-width: $desktop) {
+        transform: translateY(-98px);
+    }
+}
+
+.gallery__img {
+    position: absolute;
+    left: 50%;
+    border-radius: 24px;
+    transform: translateX(-50%);
+    transition: opacity 1s $timing-function;
+}
+
+@keyframes gallery_animation {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.gallery__img-2 {
+
+    animation-name: gallery_animation;
+    animation-timing-function: $timing-function;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+
+.gallery__img-3 {
+    animation-name: gallery_animation;
+    animation-timing-function: $timing-function;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-direction: alternate;
+}
