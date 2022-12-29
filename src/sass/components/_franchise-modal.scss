@@ -14,7 +14,7 @@
     &.is-hidden {
         opacity: 0;
         pointer-events: none;
-        }
+    }
 
 }
 
@@ -52,7 +52,7 @@
 }
 
 .franchise-modal {
-    
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,7 +60,7 @@
 
     width: calc(100% - 40px);
     max-width: 280px;
-    max-height: 674px;
+    min-height: 674px;
     height: calc(100% - 40px);
 
 
@@ -73,9 +73,7 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
-    @media screen and (min-width: $mobile) {
-        
-    }
+    @media screen and (min-width: $mobile) {}
 
     @media screen and (min-width: $tablet) {
 
@@ -168,7 +166,7 @@
         letter-spacing: 0;
 
         &:not(:placeholder-shown):required:invalid {
-        border-color: red;
+            border-color: red;
         }
 
         @media screen and (min-width: $tablet) {
@@ -201,7 +199,7 @@
         margin-bottom: 24px;
 
         &:not(:placeholder-shown):invalid {
-        border-color: red;
+            border-color: red;
         }
 
         @media screen and (min-width: $tablet) {
