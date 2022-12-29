@@ -1,9 +1,8 @@
-<!-- - МОДАЛЬНЕ ВІКНО -->
-<!-- <div class="backdrop is-hidden" data-modal>
-    <div class="modal"> -->
-        <!-- <div data-modal> -->
-            <div class="modall">
-                <form class="form-communication">
+<!-- - МОDAL-WINDOW -->
+<!-- <div class="backdrop is-hidden" data-modal> -->
+    <div class="modall">
+        <div data-modal>
+            <form class="form-communication">
                     <button type="button" class="modall__button-close" data-modal-close>
                         <svg class="modall__svg" width="22" height="22">
                             <use href="./images/symbol-defs.svg#icon-close-mob"></use>
@@ -18,9 +17,9 @@
                                     <source srcset="./images/cream-desk@1x.png 1x, ./images/cream-desk@2x.png 2x" media="(min-width: 768px)">
                                     <img src="./images/cream-mob@1x.png" alt="cream-photo" class="box__card-img">
                                 </picture>
+                                <input type="checkbox" name="consent" class="consent__checkbox consent__checkbox--visually-hidden" />
                                 <h2 class="box___title">ICE CREAM</h2>
-                                <input type="checkbox" name="consent" class="consent__checkbox consent__checkbox--visually-hidden"
-                                     />
+                               
                             </div>
                         </li>
                         <li class="modall__item-buy">
@@ -30,6 +29,7 @@
                                     <source srcset="./images/coffee-desk@1x.png 1x, ./images/coffee-desk@2x.png 2x" media="(min-width: 768px)">
                                     <img src="./images/coffee-mob@1x.png" alt="coffee-photo" class="box__card-img">
                                 </picture>
+                                <input type="checkbox" name="consent" class="consent__checkbox consent__checkbox--visually-hidden" />
                                 <h2 class="box___title">ICE COFFEE</h2>
                             </div>
                         </li>
@@ -40,6 +40,7 @@
                                     <source srcset="./images/shake-desk@1x.png ./images/shake-desk@2x.png 2x" media="(min-width: 768px)">
                                     <img src="./images/shake-mob@1x.png" alt="coffee-photo" class="box__card-img">
                                 </picture>
+                                <input type="checkbox" name="consent" class="consent__checkbox" />
                                     <h2 class="box___title">MILKSHAKES</h2>
                             </div>    
                         </li>
@@ -48,19 +49,19 @@
                         <li class="modall__item">
                             <label class="form-communication__field">
                                 <input type="text" name="name" autofocus class="form-communication__input" placeholder="Name"
-                                    required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space."/>
+                                  required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space."/>
                             </label>
                         </li>
                         <li class="modall__item">
                             <label class="form-communication__field">
                                 <input type="phone" name="phone" class="form-communication__input" placeholder="Phone"
-                                    required pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}" title="Please enter valid phone number"/>
+                                   required pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" required title="Please enter valid phone number"/>
                             </label>
                         </li>
                         <li class="modall__item">
                             <label class="form-communication__field">
                                 <textarea name="comment" rows="2" class="form-communication__textarea-input"
-                                    placeholder="Comment" required></textarea>
+                                    placeholder="Comment" ></textarea>
                             </label>
                         </li>
                     </ul>
@@ -68,4 +69,4 @@
                 </form>
             </div>
         </div>
-       <!-- <script src="./js/modal.js"></script> -->
+      

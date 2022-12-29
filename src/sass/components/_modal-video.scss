@@ -1,11 +1,11 @@
-// Модальне вікно з відео
+// MODAL-VIDEO
 .backdrop {
     position: fixed;
     width: 100%;
     height: 100%;
     left: 0px;
     top: 0px;
-    background: #84A178(132, 161,120, 0.8);
+    background-color: rgba(132, 161, 120, 0.8);
     border-radius: 10px;
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -38,7 +38,7 @@
     }
 }
 
-/* МОДАЛЬНАя кнопка */
+/* МОDAL-BUTTON */
 
 .modal__button-close {
     position: absolute;
