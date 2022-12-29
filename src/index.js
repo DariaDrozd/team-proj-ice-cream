@@ -1,5 +1,6 @@
-import "./js/modal";
-import"./modal-chocolate";
-import "./mobile-menu";
-import "./our-location-modal";
-import "./franchise-modal";
+import './js/modal-chocolate';
+import './js/mobile-menu';
+import './js/our-location-modal';
+import './js/franchise-modal';
+import './js/swiper';
+import './js/modal';
