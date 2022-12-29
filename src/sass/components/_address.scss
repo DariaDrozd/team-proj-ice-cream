@@ -13,13 +13,13 @@
 
 .address-container {
     @extend %container;
-    margin-top: -353px;
+    margin-top: -420px;
 
     @media screen and (min-width: $tablet) {
-        margin-top: -299px;
+        margin-top: -363px;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
         margin-top: -128px;
     }
 }
