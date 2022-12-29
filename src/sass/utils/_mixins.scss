@@ -1,0 +1,57 @@
+// media query
+@mixin mq($type) {
+    // $phone: 479.98px;
+    // $tablet: 767.98px;
+    // $desktop: 1199.98px;
+
+    @if $type == 'phone' {
+        // @media screen and (min-width: $phone) {
+        @media screen and (min-width: $mobile) {
+            @content;
+        }    
+    }
+
+    @if $type =='only-phone' {
+        @media screen and (max-width: $tablet) {
+            @content;
+        }
+    }
+    
+    @if $type =='tablet' {
+        @media screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+
+    @if $type =='only-tablet' {
+        @media screen and (max-width: $desktop) {
+            @content;
+        }
+    }
+        
+    @if $type =='desktop' {
+        @media screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+}
+
+// media query retina
+@mixin mqr($type) {
+    @if $type == '2x' {
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                @content;
+        }
+    }
+
+    @if $type == '3x' {
+        @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+                @content;
+        }
+    }
+    
+}
