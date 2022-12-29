@@ -154,3 +154,8 @@
 .menu-toggle__crose {
   padding: 0;
 }
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
+}
